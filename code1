@@ -1,0 +1,622 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 21,
+        "fields": {
+            "year": 2020,
+            "summary": "<p>Incumbent President Donald Trump and Vermont Senator Bernie Sanders face off in a chaotic and uncertain election. A global pandemic has battered the economy, protests have shaken the country, and voters are being asked to choose between two very different visions of America.</p><p>After Joe Biden stumbled in the early primaries and Michael Bloomberg failed to unite the party against him, Sanders won a bitter Democratic nomination fight. His supporters see a chance to build a working-class movement strong enough to defeat Trump. His critics doubt that an unapologetic democratic socialist can win over skeptical moderates and longtime Democrats. Can Sanders rebuild the Blue Wall without losing the suburbs and the South, or will Trump win another upset?</p>",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Bernie_Sanders_March_2020_%28cropped%29.jpg",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Bernie_Sanders_March_2020_%28cropped%29.jpg",
+            "recommended_reading": "<ul><li><a href=\"https://www.voterstudygroup.org/blog/how-sanders-would-change-the-democratic-coalition\">How Sanders Would Change the Democratic Coalition</a></li><li><a href=\"https://poll.qu.edu/Poll-Release?releaseid=3759\">Quinnipiac: Three Midwest Swing States, February 2020</a></li><li><a href=\"https://poll.qu.edu/Poll-Release?releaseid=3771\">Quinnipiac: Sanders and Biden Against Trump, March 2020</a></li><li><a href=\"https://thenevadaindependent.com/article/smart-early-organizing-in-communities-of-color-helped-propel-sanders-to-victory-in-nevada\">Sanders Organizing Among Latino Voters in Nevada</a></li></ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://thecampaigntrail.net/static/images/2012-no-majority.jpg",
+            "creator": "WSYAO (development build)",
+            "is_historical": false,
+            "display_year": "2020 WSYAO",
+            "recommended_reading_enabled": true,
+            "site_description": ""
+        }
+    }
+];
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 21,
+        "year": 2020,
+        "is_premium": 0,
+        "display_year": "2020 WSYAO"
+    }
+];
+
+RecReading = true;
+
+campaignTrail_temp.credits = "WSYAO (in development); based on the original 2020 Campaign Trail scenario by Dan Bryan";
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+];
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 300,
+        "fields": {
+            "first_name": "Bernie",
+            "last_name": "Sanders",
+            "election": 21,
+            "party": "Democrat",
+            "state": "Vermont",
+            "priority": 1,
+            "description": "<p>Bernie Sanders, a democratic socialist, an independent senator, and Hillary Clinton’s old rival, was not supposed to win a major-party nomination in the world’s leading capitalist country. But Biden’s expected comeback never materialized, Bloomberg could not pick up the pieces, and after a bruising primary season Sanders is the Democratic nominee. He remains as stubborn as ever, with little interest in kissing up to party bigwigs.</p><p>His coalition of young, working-class, and disaffected voters is hungry for change, but many moderates and establishment Democrats remain uneasy. With COVID-19 upending the country, Sanders’s arguments about healthcare, wages, and economic inequality have taken on new urgency. Can he turn a political revolution into an Electoral College majority without losing the voters his party needs most?</p>",
+            "color_hex": "#0070CB",
+            "secondary_color_hex": "#A3D5F5",
+            "is_active": 1,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Bernie_Sanders_March_2020_%28cropped%29.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>Against the odds, a democratic socialist has defeated Donald Trump. Now comes the harder task: turning a movement into a governing coalition in a country shaken by a pandemic and economic crisis. Your supporters are celebrating. The Democratic establishment is watching. The fight is hardly over.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2020 election.</h3><p>Your movement overturned expectations and won a major-party nomination, but Donald Trump will have another four years in the White House. Already the arguments have begun: Was the country unwilling to elect a socialist, or did the party fail to unite behind its nominee? Whatever comes next, the millions who supported your campaign are not simply going to disappear.</p>",
+            "no_electoral_majority_message": "<h3>No electoral majority.</h3><p>No candidate secured the 270 electoral votes needed to win. The election now moves to the House of Representatives, where each state delegation casts one vote. Republicans currently enjoy the advantage, but the political and legal fallout is only beginning.</p>",
+            "description_as_running_mate": "",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 301,
+        "fields": {
+            "first_name": "Donald",
+            "last_name": "Trump",
+            "election": 21,
+            "party": "Republican",
+            "state": "Florida",
+            "priority": 2,
+            "description": "<p>President Donald Trump heads into his reelection campaign facing a pandemic, a severe economic downturn, and protests across the country. He remains a formidable campaigner with a devoted Republican base, but polls suggest that he is in danger of losing the White House.</p><p>Trump has long promised to run against socialism. Now he has his preferred opponent in Bernie Sanders, a man who is just as eager to make the election about economic power and the political establishment. Can Trump paint his challenger as too radical to govern while retaining the working-class voters who made his 2016 victory possible?</p>",
+            "color_hex": "#F40634",
+            "secondary_color_hex": "#F5A0B2",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/donald-trump-2020.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>For the second time in a row, many analysts saw a victory for you as practically impossible. But whatever they say, it is clear that your Make America Great Again agenda has been vindicated. Where do you take things from here?</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2020 election.</h3><p>After an election in which many of your supporters claimed democracy itself was at stake, what happens now? Many analysts believe the party will need to go in a completely different direction next time. As for yourself, will you take these results sitting down, or will you prepare yourself for an epic political comeback in 2024?</p>",
+            "no_electoral_majority_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>In spite of the 269-269 tie in the electoral college, Republicans control a majority of state delegations in the House of Representatives. A lot of liberals are absolutely distraught and outraged that the election came down to such a technicality, but hey, those are the rules!</p>",
+            "description_as_running_mate": "",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 302,
+        "fields": {
+            "first_name": "Jo",
+            "last_name": "Jorgensen",
+            "election": 21,
+            "party": "Libertarian",
+            "state": "South Carolina",
+            "priority": 3,
+            "description": "<p>Jo Jorgensen, the Libertarian nominee, is running on smaller government, individual liberty, and opposition to the two-party system.</p>",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 303,
+        "fields": {
+            "first_name": "Howie",
+            "last_name": "Hawkins/Other",
+            "election": 21,
+            "party": "Green",
+            "state": "New York",
+            "priority": 4,
+            "description": "<p>Howie Hawkins, cofounder of the Green Party, campaigns for ecological transformation, public ownership, and a socialist Green New Deal.</p>",
+            "color_hex": "#42C872",
+            "secondary_color_hex": "#B5F5CB",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 304,
+        "fields": {
+            "first_name": "Kamala",
+            "last_name": "Harris",
+            "election": 21,
+            "party": "Democrat",
+            "state": "California",
+            "priority": 5,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/kamala-harris-2020.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Senator Kamala Harris of California was once a leading Democratic presidential contender, but her campaign collapsed after scrutiny of her prosecutorial record and difficult debates. She co-sponsored Sanders’s Medicare for All legislation, yet occupies a more familiar place in the party’s mainstream. She offers an olive branch to uneasy moderates and could help Sanders with Black voters and women, although some progressives remain suspicious of her years as attorney general.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 305,
+        "fields": {
+            "first_name": "Tammy",
+            "last_name": "Baldwin",
+            "election": 21,
+            "party": "Democrat",
+            "state": "Wisconsin",
+            "priority": 6,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.baldwin.senate.gov/imo/media/image/baldwin_official_senate_portrait3.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Wisconsin Senator Tammy Baldwin is a fellow progressive with a remarkable record of winning statewide in a competitive Midwestern state. Her support for labor, healthcare, and economic reform makes her a natural ideological partner, and she could strengthen the ticket in Wisconsin and the rest of the industrial Midwest. But she may do less to reassure Black voters and moderates, and choosing a senator from the party’s left could narrow Sanders’s appeal in some suburbs.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 306,
+        "fields": {
+            "first_name": "Karen",
+            "last_name": "Bass",
+            "election": 21,
+            "party": "Democrat",
+            "state": "California",
+            "priority": 7,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/karen-bass-2020.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>California Congresswoman Karen Bass, chair of the Congressional Black Caucus, has longstanding relationships with labor and progressive organizations. She is an experienced legislator and more comfortable with ambitious healthcare proposals than many Democrats. Bass could strengthen Sanders’s connections with Black political leaders without requiring him to abandon his agenda, though some of her past comments and relatively limited national profile could attract scrutiny.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 307,
+        "fields": {
+            "first_name": "Julián",
+            "last_name": "Castro",
+            "election": 21,
+            "party": "Democrat",
+            "state": "Texas",
+            "priority": 8,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.azcleanelections.gov/CmsContent/Image/en/286",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Former Housing and Urban Development Secretary and San Antonio mayor Julián Castro ran for president on an ambitious immigration and social-justice platform. He endorsed Elizabeth Warren during the primary but shares many of Sanders’s progressive priorities. A Castro pick could energize Latino voters, particularly in Texas and the Southwest, while giving the ticket a younger and more polished voice. His national political experience is limited compared with a sitting senator’s.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 308,
+        "fields": {
+            "first_name": "Stacey",
+            "last_name": "Abrams",
+            "election": 21,
+            "party": "Democrat",
+            "state": "Georgia",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://pac.blackeconomicalliance.org/app/uploads/2022/08/Stacey-Abrams-headshot-copy.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Stacey Abrams narrowly lost Georgia’s 2018 gubernatorial election and has become a leading figure in voting-rights organizing. Her work mobilizing voters could help Sanders with Black turnout and make Georgia and North Carolina more competitive. However, she has never held statewide or federal office, and her nomination would invite criticism of her political experience as well as debate over her response to the 2018 election.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 309,
+        "fields": {
+            "first_name": "Mike",
+            "last_name": "Pence",
+            "election": 21,
+            "party": "Republican",
+            "state": "Indiana",
+            "priority": 10,
+            "description": "'",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/mike-pence-2020.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Mike Pence has served as your Vice President for the past four years, sticking to all of your talking points and staying out of the limelight. Most feel he should be rewarded for this loyalty with another turn on the top of the ticket. He also helps shore up your support with social conservatives.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 310,
+        "fields": {
+            "first_name": "Nikki",
+            "last_name": "Haley",
+            "election": 21,
+            "party": "Republican",
+            "state": "South Carolina",
+            "priority": 11,
+            "description": "'",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/nikki-haley-2020.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Nikki Haley has served as the Governor of South Carolina, and as a UN Ambassador. She could help you moderate your image and try to close the female vote. Choosing her would probably lead to hard feelings between yourself and Pence, but would your voters care?</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 311,
+        "fields": {
+            "first_name": "Spike",
+            "last_name": "Cohen",
+            "election": 21,
+            "party": "Libertarian",
+            "state": "Maryland",
+            "priority": 12,
+            "description": "'",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Spike Cohen is the Libertarian nominee for vice president.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 312,
+        "fields": {
+            "first_name": "Angela",
+            "last_name": "Walker",
+            "election": 21,
+            "party": "Green",
+            "state": "Wisconsin",
+            "priority": 13,
+            "description": "'",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Angela Walker is the Green Party nominee for vice president.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 313,
+        "fields": {
+            "first_name": "Tulsi",
+            "last_name": "Gabbard",
+            "election": 21,
+            "party": "Democrat",
+            "state": "Hawaii",
+            "priority": 14,
+            "description": " ",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://cdn.bigislandnow.com/file/bigislandnow/2018/10/Tulsi-Gabbard-official-portrait-horiz-1024x731.jpg",
+            "electoral_victory_message": " ",
+            "electoral_loss_message": " ",
+            "no_electoral_majority_message": " ",
+            "description_as_running_mate": "<p>Hawaii Congresswoman Tulsi Gabbard famously endorsed Sanders over Clinton in 2016 and also sought the Democratic nomination in 2020. A veteran with a noninterventionist foreign policy, she could bring anti-establishment independents and disillusioned voters to the ticket. But her controversial foreign-policy positions and strained relationship with the party leadership make her a risky choice for anyone hoping to heal divisions after the primaries.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 314,
+        "fields": {
+            "first_name": "Tammy",
+            "last_name": "Duckworth",
+            "election": 21,
+            "party": "Democrat",
+            "state": "Illinois",
+            "priority": 15,
+            "description": " ",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/tammy-duckworth-2020.jpg",
+            "electoral_victory_message": " ",
+            "electoral_loss_message": " ",
+            "no_electoral_majority_message": " ",
+            "description_as_running_mate": "<p>Tammy Duckworth is a Senator from Illinois who served in Iraq and has been active in foreign policy issues. She could help in the Midwest, but was also born in Thailand (as a U.S. citizen) and will need to deflect questions about her eligibility. Additionally, many party activists are expecting an African-American to be selected as well.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    }
+];
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 200,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 304
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 201,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 305
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 210,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 314
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 209,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 313
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 202,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 306
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 203,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 307
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 204,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 308
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 205,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 309
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 206,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 310
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 207,
+        "fields": {
+            "candidate": 302,
+            "running_mate": 311
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 211,
+        "fields": {
+            "candidate": 303,
+            "running_mate": 312
+        }
+    }
+];
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 21,
+        "candidates": [
+            300,
+            301,
+            302,
+            303
+        ]
+    }
+];
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 21,
+        "candidates": [
+            300,
+            301,
+            302,
+            303
+        ]
+    }
+];
+
+campaignTrail_temp.modBoxTheme = {
+    "header_color": "#0070CB",
+    "header_text_color": "#ffffff",
+    "description_background_color": "#ffffff",
+    "description_text_color": "#111827",
+    "main_color": "#e7f3ff",
+    "secondary_color": "#07599f",
+    "ui_text_color": "#ffffff"
+};
+
+jet_data = {
+    "headerColor": "#0070CB",
+    "headerTextColor": "#ffffff",
+    "windowColor": "#e7f3ff",
+    "containerColor": "#ffffff",
+    "innerWindowColor": "#eef7ff",
+    "innerWindowTextColor": "#000000",
+    "descriptionWindowColor": "#f8f8f8",
+    "descriptionWindowTextColor": "#000000",
+    "startButtonColor": "#e8e8e8",
+    "bannerImageUrl": "https://www.newcampaigntrail.com/static/images/banner_classic.png",
+    "backgroundImageUrl": "https://www.jetsimon.com/public/static/images/background.jpg",
+    "gameTitle": "THE CAMPAIGN TRAIL",
+    "customQuote": "",
+    "quoteTextColor": "#ffffff",
+    "endingTextColor": "#000000",
+    "modBoxTheme": {
+        "header_color": "#0070CB",
+        "header_text_color": "#ffffff",
+        "header_image_url": "",
+        "header_text_shadow": "",
+        "header_font": "",
+        "header_margin": "",
+        "description_background_color": "#ffffff",
+        "description_text_color": "#111827",
+        "main_color": "#e7f3ff",
+        "secondary_color": "#07599f",
+        "secondary_hover_color": "",
+        "scrollbar_color": "",
+        "scrollbar_width": "",
+        "image_border": "",
+        "election_image_display": "",
+        "ui_text_color": "#ffffff"
+    }
+};
+
+//#startcode
+function applyTheme(theme) {
+    const gameHeader = document.querySelector(".game_header");
+    if (gameHeader && theme.coloring_title) {
+        gameHeader.style.backgroundColor = theme.coloring_title;
+    }
+
+    const gameWindow = document.getElementById("game_window");
+    if (gameWindow && theme.coloring_window) {
+        gameWindow.style.backgroundColor = theme.coloring_window;
+    }
+
+    const container = document.querySelector(".container");
+    if (container && theme.coloring_container) {
+        container.style.backgroundColor = theme.coloring_container;
+    }
+
+    const headerImg = document.getElementById("header");
+    if (headerImg && theme.header_image) {
+        headerImg.src = theme.header_image;
+    }
+
+    if (theme.body_background) {
+        document.body.style.backgroundImage = `url("${theme.body_background}")`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundAttachment = "fixed";
+    }
+
+    const style = document.createElement("style");
+    style.textContent = `
+      #results_container { color: #000000; }
+      #wittyquote { color: #ffffff; }
+      .game_header h2 { color: #ffffff; }
+      .inner_window_w_desc { background-color: #eef7ff !important; color: #000000; }
+      .inner_window_front, .person_description_window, .election_description_window, .description_window_small { background-color: #f8f8f8 !important; color: #000000; }
+      .campaign_trail_start_emphasis { background-color: #e8e8e8 !important; }
+    `;
+    document.head.appendChild(style);
+}
+
+
+
+const theme = nct_stuff.themes[nct_stuff.selectedTheme];
+
+// define / override theme values
+theme.coloring_title     = "#0070CB";
+theme.coloring_window    = "#e7f3ff";
+theme.coloring_container = "#ffffff";
+theme.header_image = "https://www.newcampaigntrail.com/static/images/banner_classic.png";
+theme.body_background = "https://www.jetsimon.com/public/static/images/background.jpg";
+
+applyTheme(theme);
+//#endcode
